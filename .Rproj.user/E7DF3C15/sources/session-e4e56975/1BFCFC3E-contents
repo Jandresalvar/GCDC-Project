@@ -13,14 +13,14 @@ setwd("C:/Users/USER/Documents/Cambio/4.Programación/Getting_and_Cleaning_Data/
 system(paste("git init"))
 system(paste("git remote add origin", git_url))
 system("git add .")
-system('git commit -m "Initial commit"')
+system('git -c user.email="jealvarez@unal.edu.co" -c user.name="Jandresalvar" commit -m "Initial commit"')
 system("git push -u origin master")
 
 # Step 2: Organize Repository
 # Create files and directories
 file.create("run_analysis.R")
 file.create("CodeBook.md")
-file.create("README.md")
+
 
 # Step 3: Tidy Data Set
 # Run your analysis code
